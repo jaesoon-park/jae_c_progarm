@@ -3,7 +3,7 @@
 
 long int fact(int);
 
-int main()
+void main()
 {
 	int n, result;
 	printf("\n 정수를 입력하세요 :");
@@ -14,7 +14,7 @@ int main()
 	printf("%d의 팩토리얼 값은 %ld입니다.\n", n, result);
 	getchar();
 	getchar();
-
+	
 }
 
 long int fact(int n) {
@@ -27,7 +27,7 @@ long int fact(int n) {
 	else {
 		printf("\n fact(%d) 함수호출!");
 		value = (n*fact(n - 1));
-		printf("\n fact(%d)  값 %ld 반환!", n, value);
+		printf("\n fact(%d)  값 %ld 반환!",n,value);
 		return value;
 	}
 
